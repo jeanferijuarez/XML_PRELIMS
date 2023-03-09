@@ -1,82 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <countries>
-            <continent type="Asia">
-                  <region>South-East Asia</region>
-                  <country>Philippines</country>
-                  <country_code>63</country_code>
-                  <capital_city>Manila</capital_city>
-                  <population>113,433,099</population>
-                  <government_type>Democratic &amp; Republican</government_type>
-                  <currency>Philippine Peso</currency>
-                  <current_president>Ferdinand Romualdez Marcos Jr.</current_president>
-                  <primary_language>Filipino</primary_language>
-                  <main_religion>Roman Catholic</main_religion>
+            <country>
+                 <country_name>Philippines</country_name>
+                      <location>
+                         <continent>Asia</continent>
+                         <region>South-East Asia</region>
+                         <longitude>12.8797° N</longitude>
+                         <latitude>121.7740° E</latitude>
+                      </location>
+                  <seasons>
+                          <season_1>Rainy Season<season_1>    
+                          <season_2>Dry Season</season_2>   
+                  </seasons>
+                              
+                  <country_legal_info>                 
+                              <country_code>63</country_code>
+                              <capital_city>Manila</capital_city>
+                              <population>113,433,099</population>
+                              <government_type>Democratic &amp; Republican</government_type>
+                              <currency>Philippine Peso</currency>
+                              <current_president>Ferdinand Romualdez Marcos Jr.</current_president>
+                              <primary_language>Filipino</primary_language>
+                              <main_religion>Roman Catholic</main_religion>
+                 </country_legal_info>
+            </country>
 
-            </continent>
+            <country>
+                   <country_name>Japan</country_name>
+                        <location>
+                              <continent>Asia</continent>
+                              <region>Northeast Asia</region>
+                              <longitude>36.2048° N</longitude>
+                              <latitude> 138.2529° E</latitude>
+                        <location>
+                       <seasons>
+                             <season_1>Spring</season_1>
+                             <season_2>Summer</season_2>
+                             <season_3>Fall</season_3>
+                             <season_4>Winter</season_4>
+                       </seasons>      
+                  <country_legal_info>     
+                              <country_code>81</country_code>
+                              <capital_city>Tokyo</capital_city>
+                              <population>125,455,324 a</population>
+                              <government_type>Democratic</government_type>
+                              <currency>Japanese yen</currency>
+                              <current_prime_minister>Fumio Kishida</current_prime_minister>
+                              <primary_language>Japanese</primary_language>
+                              <main_religion>Shinto &amp; Buddhism</main_religion>
+                  </country_legal_info>
+            </country>
 
-            <continent type="Asia">
-                  <region>Northeast Asia</region>
-                  <country>Japan</country>
-                  <country_code>81</country_code>
-                  <capital_city>Tokyo</capital_city>
-                  <population>125,455,324 a</population>
-                  <government_type>Democratic</government_type>
-                  <currency>Japanese yen</currency>
-                  <current_prime_minister>Fumio Kishida</current_prime_minister>
-                  <primary_language>Japanese</primary_language>
-                  <main_religion>Shinto &amp; Buddhism</main_religion>
-            </continent>
+            <country>
+                  <country_name>Russia</country_name>
+                        <location>
+                              <continent>Europe</continent>
+                              <region>Western Europe</region>
+                              <longitude>61.5240° N</longitude>
+                              <latitude> 105.3188° E</latitude>
+                        </location>
+                        
+                       <seasons>
+                             <season_1>Spring</season_1>
+                             <season_2>Summer</season_2>
+                             <season_3>Fall</season_3>
+                             <season_4>Winter</season_4>
+                       </seasons> 
+                       
+                       <country_legal_info>
+                              <country_code>7</country_code>
+                              <capital_city>Moscow</capital_city>
+                              <population>146,099,558</population>
+                              <government_type>Constitutional republic, Federal republic, &amp; Semi-presidential republic</government_type>
+                              <currency>Russian Ruble</currency>
+                              <current_president>Vladimir Putin</current_president>
+                              <primary_language>Russian</primary_language>
+                              <main_religion>Orthodox Christianity</main_religion>
+                       </country_legal_info>
+            </country>
 
-            <continent type="Europe">
-                  <region>Western Europe</region>
-                  <country>Russia</country>
-                  <country_code>7</country_code>
-                  <capital_city>Moscow</capital_city>
-                  <population>146,099,558</population>
-                  <government_type>Constitutional republic, Federal republic, &amp; Semi-presidential republic</government_type>
-                  <currency>Russian Ruble</currency>
-                  <current_president>Vladimir Putin</current_president>
-                  <primary_language>Russian</primary_language>
-                  <main_religion>Orthodox Christianity</main_religion>
+            <country>
+                   <country_name>United Kingdom</country_name>
+                        <location>
+                             <continent>Europe</continent>
+                             <region>Northwestern coast of mainland Europe</region>
+                             <longitude>55.3781° N</longitude>
+                             <latitude> 3.4360° W</latitude>
+                        </location>
+                        
+                      <seasons>
+                             <season_1>Spring</season_1>
+                             <season_2>Summer</season_2>
+                             <season_3>Fall</season_3>
+                             <season_4>Winter</season_4>
+                       </seasons>
+                        
+                      <country_legal_info>
+                              <country_code>44</country_code>
+                              <capital_city>London</capital_city>
+                              <population>68,827,285</population>
+                              <government_type>Constitutional Monarchy, Parliamentary system, &amp; Unitary state</government_type>
+                              <current_prime_minister>Rishi Sunak</current_prime_minister>  
+                              <currency>British Pound</currency>               
+                              <primary_language>English</primary_language>
+                              <main_religion>Christianity</main_religion>
+                      </country_legal_info>
+            </country>
+            
+            <country>
+                  <country_name>Canada</country_name>
+                      <location>
+                            <continent>North America</continent>
+                            <region>Northern part of North America</region>
+                            <longitude>56.1304° N</longitude>
+                            <latitude> 106.3468° W</latitude>
+                        </location>
+                        
+                      <seasons>
+                             <season_1>Spring</season_1>
+                             <season_2>Summer</season_2>
+                             <season_3>Fall</season_3>
+                             <season_4>Winter</season_4>
+                       </seasons>
+                        
+                        </country_legal_info>
+                              <country_code>1</country_code>
+                              <capital_city>Ottawa</capital_city>
+                              <population>38,615,866</population>
+                              <government_type>Federation</government_type>
+                              <current_prime_minister>Justin Trudeau</current_prime_minister>  
+                              <currency>Canadian Dollar</currency>         
+                              <primary_language>English</primary_language>
+                              <main_religion>Christianity</main_religion>
+                        </country_legal_info>
         
-            </continent>
-
-            <continent type="Europe">
-                  <region>Northwestern coast of mainland Europe</region>
-                  <country>United Kingdom</country>
-                  <country_code>44</country_code>
-                  <capital_city>London</capital_city>
-                  <population>68,827,285</population>
-                  <government_type>Constitutional Monarchy, Parliamentary system, &amp; Unitary state</government_type>
-                  <current_prime_minister>Rishi Sunak</current_prime_minister>  
-                  <currency>British Pound</currency>               
-                  <primary_language>English</primary_language>
-                  <main_religion>Christianity</main_religion>
-        
-            </continent>
-
-              <continent type="North America">
-                  <region>Northern part of North America</region>
-                  <country>Canada </country>
-                  <country_code>1</country_code>
-                  <capital_city>Ottawa</capital_city>
-                  <population>38,615,866</population>
-                  <government_type>Federation</government_type>
-                  <current_prime_minister>Justin Trudeau</current_prime_minister>  
-                  <currency>Canadian Dollar</currency>         
-                  <primary_language>English</primary_language>
-                  <main_religion>Christianity</main_religion>
-
-        
-            </continent>
+            </country>
 
              
-
-
-
-
-
-
-
 
 </countries>

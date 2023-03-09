@@ -9,7 +9,7 @@
                          <latitude>121.7740° E</latitude>
                       </location>
                   <seasons>
-                          <season_1>Rainy Season<season_1>    
+                          <season_1>Rainy Season</season_1>    
                           <season_2>Dry Season</season_2>   
                   </seasons>
                               
@@ -32,7 +32,7 @@
                               <region>Northeast Asia</region>
                               <longitude>36.2048° N</longitude>
                               <latitude> 138.2529° E</latitude>
-                        <location>
+                        </location>
                        <seasons>
                              <season_1>Spring</season_1>
                              <season_2>Summer</season_2>
@@ -123,7 +123,7 @@
                              <season_4>Winter</season_4>
                        </seasons>
                         
-                        </country_legal_info>
+                        <country_legal_info>
                               <country_code>1</country_code>
                               <capital_city>Ottawa</capital_city>
                               <population>38,615,866</population>

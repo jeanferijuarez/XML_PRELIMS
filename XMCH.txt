@@ -5,13 +5,21 @@ using UnityEngine;
 public class CoinCollect : MonoBehaviour
 {
     private GameManager gameManager; // Reference to the GameManager script.
+    public float rotationSpeed = 100f; // Adjust the value to control the rotation speed.
 
-    void Start()
+    private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+        // Start a coroutine to animate the rotation.
+        StartCoroutine(RotateCoin());
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void Update()
+    {
+        // You can remove the horizontal movement code here.
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -20,104 +28,13 @@ public class CoinCollect : MonoBehaviour
         }
     }
 
-}
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class GameManager : MonoBehaviour
-{
-    public Text scoreText; // Reference to a UI Text element for displaying the score. private int score = 0; // The current score.
-    private int score = 0;
-    public GameObject coinPrefab;
-    public int numberOfCoins = 10; // Adjust this value to determine how many coins to spawn.
-
-    void Start()
+    IEnumerator RotateCoin()
     {
-        UpdateScoreText();
-
-        // Spawn coins using Instantiate.
-        for (int i = 0; i < numberOfCoins; i++)
+        while (true) // Keep rotating indefinitely.
         {
-            // Vector3 spawnPosition = new Vector3(Random.Range(-7f, 7f), Random.Range(0.1f, 2.5f), 0f);
-            Vector3 spawnPosition = new Vector3(Random.Range(-5f, 5f), Random.Range(0.1f, 0.5f), 0f);
-
-            Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
+            // Rotate the coin around the Y-axis using Time.deltaTime.
+            transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+            yield return null; // Wait for the next frame.
         }
     }
-
-    public void AddScore(int amount)
-    {
-        score += amount; UpdateScoreText();
-    }
-
-    void UpdateScoreText()
-    {
-        scoreText.text = "Score: " + score;
-    }
-
-
-
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayerMovement : MonoBehaviour
-{
-    public float moveSpeed = 5f; public float jumpForce = 10f; private bool isGrounded;
-    private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer; 
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
-    void Update()
-    {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-
-        Vector2 movement = new Vector2(moveHorizontal * moveSpeed, rb.velocity.y);
-        rb.velocity = movement;
-
-        // Flip the player's sprite if moving left
-        if (moveHorizontal < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        // Flip it back if moving right
-        else if (moveHorizontal > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        }
-    }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
-    }
-
 }
